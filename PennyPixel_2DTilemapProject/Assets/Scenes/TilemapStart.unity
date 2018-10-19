@@ -570,6 +570,9 @@ GameObject:
   - component: {fileID: 1130259683}
   - component: {fileID: 1130259685}
   - component: {fileID: 1130259684}
+  - component: {fileID: 1130259688}
+  - component: {fileID: 1130259687}
+  - component: {fileID: 1130259686}
   m_Layer: 0
   m_Name: Platforms
   m_TagString: Untagged
@@ -994,6 +997,82 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!66 &1130259686
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1130259682}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1130259688}
+    m_ColliderPaths:
+    - - X: -47656248
+        Y: -30000000
+      - X: 49531248
+        Y: -30000000
+      - X: 50000000
+        Y: -29375000
+      - X: 50000000
+        Y: -312500
+      - X: 49843752
+        Y: 0
+      - X: -50000000
+        Y: 0
+      - X: -50000000
+        Y: -28437500
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 5, y: -2.9375}
+      - {x: 5, y: -0.03125}
+      - {x: 4.9843755, y: 0}
+      - {x: -5, y: 0}
+      - {x: -5, y: -2.84375}
+      - {x: -4.765625, y: -3}
+      - {x: 4.953125, y: -3}
+  m_VertexDistance: 0.0005
+--- !u!50 &1130259687
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1130259682}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!19719996 &1130259688
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1130259682}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
 --- !u!1 &1167058248
 GameObject:
   m_ObjectHideFlags: 0
